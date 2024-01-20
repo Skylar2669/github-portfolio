@@ -152,10 +152,22 @@ body{
             .experience_description_intern{
                 width: 300px;
                 margin: 0;
+
+                ul{
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
             }
             .experience_description_waitress{
                 width: 300px;
                 margin: 0 0 0 20px;
+
+                ul{
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
             }
         }
     }

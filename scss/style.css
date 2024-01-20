@@ -168,9 +168,17 @@ body {
   margin: 0;
 }
 
+.main .experience .experience_description .experience_description_intern ul li {
+  margin-bottom: 10px;
+}
+
 .main .experience .experience_description .experience_description_waitress {
   width: 300px;
   margin: 0 0 0 20px;
+}
+
+.main .experience .experience_description .experience_description_waitress ul li {
+  margin-bottom: 10px;
 }
 
 .main .projects {
