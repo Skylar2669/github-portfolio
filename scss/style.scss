@@ -1,0 +1,189 @@
+* {
+	padding: 0px;
+	margin: 0px auto;
+    box-sizing: border-box;
+    font-family: sans-serif;;
+}
+body{
+    background-color: #fff;
+    color: #868a9b;
+}
+
+.sidebar {
+    // width: 20%;
+    width: 300px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+	box-shadow: 10px 10px 10px  RGB(0 0 0 / 5%);
+
+    .sidebar_title{
+        h1{
+            font-size: 60px;
+            a{
+                text-decoration: none;
+                color: rgb(27, 27, 29);
+            }
+        }
+       
+    }
+    .sidebar_options{
+        margin: 100px auto;
+        font-size: 20px;
+        
+        .sidebar_options_nav{
+            list-style: none;
+
+            li{
+                margin: 10px 0;
+                a{
+                    color: #868a9b;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color:rgb(27, 27, 29);
+                }
+            }
+        }
+    }
+}
+
+.main{
+    width: 100%;
+	padding-left: 300px;
+    padding-top: 200px;
+    .start{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 200px;
+        .selfie{
+            margin-right: 20px;
+            img{
+                width: 400px;
+                border-radius: 50%; 
+            }
+        }
+        .start_text{
+            margin-left: 20px;
+            h1{
+                font-size: 60px;
+                color: rgb(27, 27, 29);
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    .about{
+        padding: 50px 150px;
+        background-color: #f7f7f7;;
+        .about_title h1{
+            color: rgb(27, 27, 29);
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .about_description{
+            font-size:15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // pre{
+
+            // }
+            ul{
+                columns: 2;
+                padding-left: 200px;
+                li{
+                    margin-right: 20px;
+                }
+            }
+            
+            
+        }
+    }
+
+    .edu{
+        padding: 50px 150px;
+
+        .edu_title h1{
+            color: rgb(27, 27, 29);
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .edu_description{
+            display: flex;
+            justify-content: center;
+            .edu_description_master{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 300px;
+                margin: 0;
+            }
+            .edu_description_bachelor{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 300px;
+                margin: 0;
+            }
+        }
+    }
+    .experience{
+        padding: 50px 150px;
+        background-color: #f7f7f7;;
+
+        .experience_title h1{
+            color: rgb(27, 27, 29);
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .experience_description{
+            display: flex;
+            justify-content: center;
+            .experience_description_intern{
+                width: 300px;
+                margin: 0;
+            }
+            .experience_description_waitress{
+                width: 300px;
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+    .projects{
+        padding: 50px 150px;
+
+        .projects_title h1{
+            color: rgb(27, 27, 29);
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+    }
+    .contact{
+        padding: 50px 150px;
+        background-color: #f7f7f7;;
+
+        .contact_title h1{
+            color: rgb(27, 27, 29);
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+
+        .contact_description{
+            display: flex;
+            justify-content: center;
+            ul{
+                list-style: none;
+            }
+        }
+    }
+}
