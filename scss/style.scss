@@ -1,3 +1,12 @@
+$primary_font_color: #868a9b;
+$background_color:#fff;
+$title_color:rgb(27, 27, 29);
+$h1_big: 60px;
+$h1_mid: 30px;
+$h1_small: 20px;
+$h3_small: 15px;
+$p_small: 13px;
+
 * {
 	padding: 0px;
 	margin: 0px auto;
@@ -6,11 +15,10 @@
 }
 body{
     background-color: #fff;
-    color: #868a9b;
+    color: $primary_font_color;
 }
 
 .sidebar {
-    // width: 20%;
     width: 300px;
 	left: 0px;
 	top: 0px;
@@ -20,15 +28,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	background-color: #fff;
+	background-color: $background_color;
 	box-shadow: 10px 10px 10px  RGB(0 0 0 / 5%);
 
     .sidebar_title{
         h1{
-            font-size: 60px;
+            font-size: $h1_big;
             a{
                 text-decoration: none;
-                color: rgb(27, 27, 29);
+                color: $title_color;
             }
         }
        
@@ -43,11 +51,11 @@ body{
             li{
                 margin: 10px 0;
                 a{
-                    color: #868a9b;
+                    color: $primary_font_color;
                     text-decoration: none;
                 }
                 a:hover{
-                    color:rgb(27, 27, 29);
+                    color:$title_color;
                 }
             }
         }
@@ -72,8 +80,8 @@ body{
         .start_text{
             margin-left: 20px;
             h1{
-                font-size: 60px;
-                color: rgb(27, 27, 29);
+                font-size: $h1_big;
+                color: $title_color;
             }
             p{
                 font-size: 30px;
@@ -86,8 +94,8 @@ body{
         padding: 50px 150px;
         background-color: #f7f7f7;;
         .about_title h1{
-            color: rgb(27, 27, 29);
-            font-size: 30px;
+            color: $title_color;
+            font-size: $h1_mid;
             padding-bottom: 20px;
         }
         .about_description{
@@ -95,14 +103,14 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // pre{
-
-            // }
+            p{
+                width: 600px;
+            }
             ul{
                 columns: 2;
-                padding-left: 125px;
+                padding-left: 40px;
                 li{
-                    margin-right: 20px;
+                    margin-right: 50px;
                 }
             }
             
@@ -114,8 +122,8 @@ body{
         padding: 50px 150px;
 
         .edu_title h1{
-            color: rgb(27, 27, 29);
-            font-size: 30px;
+            color: $title_color;
+            font-size: $h1_mid;
             padding-bottom: 20px;
         }
         .edu_description{
@@ -142,8 +150,8 @@ body{
         background-color: #f7f7f7;;
 
         .experience_title h1{
-            color: rgb(27, 27, 29);
-            font-size: 30px;
+            color: $title_color;
+            font-size: $h1_mid;
             padding-bottom: 20px;
         }
         .experience_description{
@@ -175,8 +183,8 @@ body{
         padding: 50px 150px;
 
         .projects_title h1{
-            color: rgb(27, 27, 29);
-            font-size: 30px;
+            color: $title_color;
+            font-size: $h1_mid;
             padding-bottom: 20px;
         }
     }
@@ -186,7 +194,7 @@ body{
 
         .contact_title h1{
             color: rgb(27, 27, 29);
-            font-size: 30px;
+            font-size: $h1_mid;
             padding-bottom: 20px;
         }
 
@@ -196,7 +204,7 @@ body{
                 a{
                     margin-left: 70px;
                     margin-right: 70px;
-                    color: black;
+                    color: $title_color;
                     i{
                         font-size: 20px;
                     }
@@ -205,6 +213,350 @@ body{
                     color:blue;
                 }
                 
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .main{
+        .about{
+            .about_description{
+                p{
+                    width:500px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .sidebar{
+        width: 250px;
+        transition: all 0.3s ease 0s;
+        .sidebar_title{
+            h1{
+                font-size: 50px;
+            }
+           
+        }
+    }
+    .main{
+        transition: all 0.3s ease 0s;
+        padding-left: 250px;
+        .start{
+            .selfie{
+                img{
+                    width: 300px;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            
+        }
+           .about{
+                padding-left: 100px;
+            }
+            .edu{
+                padding-left: 100px;
+            }
+            .experience{
+                padding-left: 100px;
+            }
+            .projects{
+                padding-left: 100px;
+            }
+            .contact{
+                padding-left: 100px;
+            }
+    }
+}
+
+@media screen and (max-width: 876px){
+    .sidebar{
+        width: 200px;
+        transition: all 0.3s ease 0s;
+        .sidebar_title{
+            h1{
+                font-size: 40px;
+            }
+           
+        }
+    }
+    .main{
+        transition: all 0.3s ease 0s;
+        padding-left: 200px;
+        .about{
+            padding-left: 70px;
+            .about_description{
+                p{
+                    width:400px;
+                }
+            }
+        }
+        .edu{
+            padding-left: 70px;
+        }
+        .experience{
+            padding-left: 70px;
+        }
+        .projects{
+            padding-left: 70px;
+        }
+        .contact{
+            padding-left: 70px;
+        }
+    }  
+}
+
+@media screen and (max-width: 700px){
+    .sidebar{
+        width: 150px;
+        transition: all 0.3s ease 0s;
+        .sidebar_title{
+            h1{
+                font-size: $h1_mid;
+            }
+        }
+        .sidebar_options{
+            font-size: 15px;
+        }
+    }
+    .main{
+        transition: all 0.3s ease 0s;
+        padding-left: 150px;
+
+        .start{
+            .selfie{
+                img{
+                    width: 200px;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            .start_text{
+                h1{
+                    font-size: 40px;
+                }
+                div{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .about{
+            padding-left: 50px;
+            .about_title{
+                h1{
+                    font-size: $h1_small;
+                }  
+            }
+            .about_description{
+                p,ul{
+                    width:400px;
+                    font-size: $p_small;
+                }
+            }
+        }
+        .edu{
+            padding-left: 50px;
+            .edu_title{
+                h1{
+                    font-size: $h1_small;
+                }
+            }
+            .edu_description{
+                .edu_description_bachelor{
+                    h3{
+                        font-size: $h3_small;
+                    }
+                    p{
+                        font-size: $p_small;
+                    }
+                }
+                .edu_description_master{
+                    h3{
+                        font-size: $h3_small;
+                    }
+                    p{
+                        font-size: $p_small;
+                    }
+                }
+            }
+        }
+        .experience{
+            padding-left: 50px;
+
+            .experience_title{
+                h1{
+                    font-size: $h1_small;
+                }
+            }
+            .experience_description{
+                .experience_description_intern{
+                    h3{
+                        font-size: $h3_small;
+                    }
+                    p,ul{
+                        font-size: $p_small;
+                    }
+                }
+                .experience_description_waitress{
+                    h3{
+                        font-size: $h3_small;
+                    }
+                    p,ul{
+                        font-size: $p_small;
+                    }
+                }
+            }
+        }
+        .projects{
+            padding-left: 50px;
+
+            .projects_title{
+                h1{
+                    font-size: $h1_small;
+                }
+            }
+        }
+        .contact{
+            padding-left: 50px;
+
+            .contact_title{
+                h1{
+                    font-size: $h1_small;
+                }
+            }
+            .contact_description{
+                a{
+                    i{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px){
+    .main{
+        .about{
+            .about_description{
+                p{
+                    width: 300px;
+                }
+            }
+        }
+        .contact{
+            .contact_description{
+                a{
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 510px){
+    .sidebar{
+        width: 100px;
+        transition: all 0.3s ease 0s;
+        .sidebar_title{
+            h1{
+                font-size: 25px;
+            }
+        }
+        .sidebar_options{
+            font-size: $p_small;
+        }
+    }
+    .main{
+        transition: all 0.3s ease 0s;
+        padding-left: 100px;
+
+        .start{
+            flex-direction: column;
+            .selfie{
+                margin-left: 50px;
+                img{
+                    width: 200px;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            .start_text{
+                h1{
+                    font-size: 40px;
+                }
+                div{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .contact{
+            .contact_description{
+                a{
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 465px){
+    .sidebar{
+        .sidebar_title{
+            // position: relative;
+        }
+        .sidebar_options{
+            // position: fixed;
+        }
+    }
+    .main{
+        .about{
+            .about_description{
+                p{
+                    width: 200px;
+                }
+                ul{
+                    columns: 1;
+                }
+            }
+        }
+        .edu{
+            .edu_description{
+                flex-direction: column;
+                .edu_description_bachelor{
+                    width: 230px;   
+                }
+                .edu_description_master{
+                    width: 230px;
+                }
+            }
+        }
+        .experience{
+            .experience_description{
+                flex-direction: column;
+                .experience_description_waitress{
+                    width: 230px;
+                    margin-left:0;
+                }
+                .experience_description_intern{
+                    width: 230px;
+                    
+                }
+            }
+        }
+        .contact{
+            .contact_description{
+                a{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }

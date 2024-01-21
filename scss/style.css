@@ -107,13 +107,17 @@ body {
   justify-content: center;
 }
 
+.main .about .about_description p {
+  width: 600px;
+}
+
 .main .about .about_description ul {
   columns: 2;
-  padding-left: 125px;
+  padding-left: 40px;
 }
 
 .main .about .about_description ul li {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .main .edu {
@@ -210,7 +214,7 @@ body {
 .main .contact .contact_description a {
   margin-left: 70px;
   margin-right: 70px;
-  color: black;
+  color: #1b1b1d;
 }
 
 .main .contact .contact_description a i {
@@ -219,4 +223,242 @@ body {
 
 .main .contact .contact_description a:hover {
   color: blue;
+}
+
+@media screen and (max-width: 1100px) {
+  .main .about .about_description p {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 250px;
+    transition: all 0.3s ease 0s;
+  }
+  .sidebar .sidebar_title h1 {
+    font-size: 50px;
+  }
+  .main {
+    transition: all 0.3s ease 0s;
+    padding-left: 250px;
+  }
+  .main .start .selfie img {
+    width: 300px;
+    transition: all 0.3s ease 0s;
+  }
+  .main .about {
+    padding-left: 100px;
+  }
+  .main .edu {
+    padding-left: 100px;
+  }
+  .main .experience {
+    padding-left: 100px;
+  }
+  .main .projects {
+    padding-left: 100px;
+  }
+  .main .contact {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .sidebar {
+    width: 200px;
+    transition: all 0.3s ease 0s;
+  }
+  .sidebar .sidebar_title h1 {
+    font-size: 40px;
+  }
+  .main {
+    transition: all 0.3s ease 0s;
+    padding-left: 200px;
+  }
+  .main .about {
+    padding-left: 70px;
+  }
+  .main .about .about_description p {
+    width: 400px;
+  }
+  .main .edu {
+    padding-left: 70px;
+  }
+  .main .experience {
+    padding-left: 70px;
+  }
+  .main .projects {
+    padding-left: 70px;
+  }
+  .main .contact {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 150px;
+    transition: all 0.3s ease 0s;
+  }
+  .sidebar .sidebar_title h1 {
+    font-size: 30px;
+  }
+  .sidebar .sidebar_options {
+    font-size: 15px;
+  }
+  .main {
+    transition: all 0.3s ease 0s;
+    padding-left: 150px;
+  }
+  .main .start .selfie img {
+    width: 200px;
+    transition: all 0.3s ease 0s;
+  }
+  .main .start .start_text h1 {
+    font-size: 40px;
+  }
+  .main .start .start_text div p {
+    font-size: 20px;
+  }
+  .main .about {
+    padding-left: 50px;
+  }
+  .main .about .about_title h1 {
+    font-size: 20px;
+  }
+  .main .about .about_description p, .main .about .about_description ul {
+    width: 400px;
+    font-size: 13px;
+  }
+  .main .edu {
+    padding-left: 50px;
+  }
+  .main .edu .edu_title h1 {
+    font-size: 20px;
+  }
+  .main .edu .edu_description .edu_description_bachelor h3 {
+    font-size: 15px;
+  }
+  .main .edu .edu_description .edu_description_bachelor p {
+    font-size: 13px;
+  }
+  .main .edu .edu_description .edu_description_master h3 {
+    font-size: 15px;
+  }
+  .main .edu .edu_description .edu_description_master p {
+    font-size: 13px;
+  }
+  .main .experience {
+    padding-left: 50px;
+  }
+  .main .experience .experience_title h1 {
+    font-size: 20px;
+  }
+  .main .experience .experience_description .experience_description_intern h3 {
+    font-size: 15px;
+  }
+  .main .experience .experience_description .experience_description_intern p, .main .experience .experience_description .experience_description_intern ul {
+    font-size: 13px;
+  }
+  .main .experience .experience_description .experience_description_waitress h3 {
+    font-size: 15px;
+  }
+  .main .experience .experience_description .experience_description_waitress p, .main .experience .experience_description .experience_description_waitress ul {
+    font-size: 13px;
+  }
+  .main .projects {
+    padding-left: 50px;
+  }
+  .main .projects .projects_title h1 {
+    font-size: 20px;
+  }
+  .main .contact {
+    padding-left: 50px;
+  }
+  .main .contact .contact_title h1 {
+    font-size: 20px;
+  }
+  .main .contact .contact_description a i {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .main .about .about_description p {
+    width: 300px;
+  }
+  .main .contact .contact_description a {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sidebar {
+    width: 100px;
+    transition: all 0.3s ease 0s;
+  }
+  .sidebar .sidebar_title h1 {
+    font-size: 25px;
+  }
+  .sidebar .sidebar_options {
+    font-size: 13px;
+  }
+  .main {
+    transition: all 0.3s ease 0s;
+    padding-left: 100px;
+  }
+  .main .start {
+    flex-direction: column;
+  }
+  .main .start .selfie {
+    margin-left: 50px;
+  }
+  .main .start .selfie img {
+    width: 200px;
+    transition: all 0.3s ease 0s;
+  }
+  .main .start .start_text h1 {
+    font-size: 40px;
+  }
+  .main .start .start_text div p {
+    font-size: 20px;
+  }
+  .main .contact .contact_description a {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .main .about .about_description p {
+    width: 200px;
+  }
+  .main .about .about_description ul {
+    columns: 1;
+  }
+  .main .edu .edu_description {
+    flex-direction: column;
+  }
+  .main .edu .edu_description .edu_description_bachelor {
+    width: 230px;
+  }
+  .main .edu .edu_description .edu_description_master {
+    width: 230px;
+  }
+  .main .experience .experience_description {
+    flex-direction: column;
+  }
+  .main .experience .experience_description .experience_description_waitress {
+    width: 230px;
+    margin-left: 0;
+  }
+  .main .experience .experience_description .experience_description_intern {
+    width: 230px;
+  }
+  .main .contact .contact_description a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
