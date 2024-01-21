@@ -109,7 +109,7 @@ body {
 
 .main .about .about_description ul {
   columns: 2;
-  padding-left: 200px;
+  padding-left: 125px;
 }
 
 .main .about .about_description ul li {
@@ -207,6 +207,16 @@ body {
   justify-content: center;
 }
 
-.main .contact .contact_description ul {
-  list-style: none;
+.main .contact .contact_description a {
+  margin-left: 70px;
+  margin-right: 70px;
+  color: black;
+}
+
+.main .contact .contact_description a i {
+  font-size: 20px;
+}
+
+.main .contact .contact_description a:hover {
+  color: blue;
 }
